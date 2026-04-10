@@ -1,5 +1,4 @@
-stage('Build') {
-            steps {
-                sh "mvn package"
-            }
-        }
+def call () {
+            stage('Build') {
+                        sh 'mvn clean package'
+}
